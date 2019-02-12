@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="xiniunet.com.floatingview">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +21,7 @@
             android:launchMode="singleTask"
             android:taskAffinity=".FloatingViewActivity"
             android:name=".FloatingViewActivity"/>
+        <service android:name=".service.FloatingService"/>
     </application>
 
 </manifest>
